@@ -1,14 +1,13 @@
 name: .NET Build and Test on Ubuntu
 
 on:
+  workflow_dispatch:
   push:
     branches-ignore:
       - main
   pull_request:
     branches:
       - main
-
-workflow_dispatch:
 
 jobs:
   build-and-test:
